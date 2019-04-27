@@ -1,0 +1,59 @@
+body{
+    background-color:#92bde7;
+}
+.title{
+margin:80px auto;
+margin-left:50px;
+}
+.ada{
+    display:inline;
+  color:rgb(255, 255, 255);
+}
+.sf{
+    display:inline;
+    color:grey;
+}
+.container{
+    display:grid;
+    margin:20px 70px;
+    background-color: #92bde7;
+    height:700px; 
+    grid-template-columns: 40% auto;
+    grid-template-rows: 100% auto;
+}
+.info {
+    background-color:rgb(61, 168, 255);
+}
+.contact{
+    background-color:rgb(255, 255, 255);
+}
+.image{
+    width:80%;
+    padding-left:50px;
+}
+.intro{
+    padding:50px;
+    font-size:20px;
+    color:rgb(73, 71, 71);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.haha{
+    padding-top:-10px;
+    padding-left:40px;
+    font-size:20px;
+    color:rgb(133, 3, 89);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+    color:rgb(89, 17, 110);
+    padding:20px;
+}
+.form-row{
+    padding:10px;
+}
+.message{
+    height:100px;
+}
+.form-group{
+    padding:20px;
+}

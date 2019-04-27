@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="title">
+        <h1 class="ada">ADA <span class="sf">Students feedback</span></h1>
+    </div>
+    <div class="container">
+        <div class="info">
+            &nbsp;&nbsp;&nbsp;<img class="image" src="awesome-hiring.png">
+            <p class="intro">
+                To give us feedback, because this course is made for you! Because it's all about you!
+            </p>
+            <p class="haha">Fill this form if you:</p>
+            <ul>
+                <li></i> Find an error in the content or in the quizzes</li>
+                <li></i> Have a feedback about instructors or the experience</li>
+                <li></i> Have a suggestion on how to make the course better</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3 class="header" align="center">Contact us</h3>
+            <hr>
+            <form class="needs-validation" novalidateaction="https://formspree.io/malekhac@gmail.com" method="POST" />
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input name="firstname" type="text" class="form-control" id="validationCustom01"
+                        placeholder="First name" value="Mark" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="col-md-4 mb-3">
+                    <label for="validationCustom02">Last name</label>
+                    <input name="lastname" type="text" class="form-control" id="validationCustom02"
+                        placeholder="Last name" value="Otto" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+
+                &nbsp;<div class="col-md-4 mb-3">
+                    <label for="validationCustomUsername">Slide name (or object) </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend"></span>
+                        </div>
+                        <input name="slidename" type="text" class="form-control" id="validationCustomUsername"
+                            placeholder="slidername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please choose a slide name.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom03">Message</label>
+                    <br><textarea name="message" rows="5" id="message" require></textarea>
+                    <div class="invalid-feedback">
+                        Please write us a message.
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    &nbsp;&nbsp; &nbsp;&nbsp;<input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                        required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button class="btn btn-primary" type="submit">Submit
+                    form</button>
+            </div>
+            </form>
+
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                    'use strict';
+                    window.addEventListener('load', function () {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
+        </div>
+
+    </div>
+</body>
+
+</html>
